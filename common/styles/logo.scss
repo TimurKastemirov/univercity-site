@@ -1,0 +1,21 @@
+.logo {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__img {}
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    &__name {
+      line-height: 12px;
+    }
+    &__type {
+      line-height: 21px;
+    }
+  }
+}
