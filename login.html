@@ -7,46 +7,73 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link href="common/bootstrap/http_cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_css_bootstrap.css" rel="stylesheet">
 
     <link rel="stylesheet" href="common/styles/logo.css">
     <link rel="stylesheet" href="common/styles/lang.css">
+    <link rel="stylesheet" href="common/styles/info-message.css">
 
     <link rel="stylesheet" href="pages/login/styles.css">
 
     <title>Engenious University</title>
 </head>
 <body>
-<section class="login-main">
-    <div class="login-main__header">
-        <div class="logo">
-            <div class="logo__img">
-                <img src="common/images/logo.png" alt="logo">
-            </div>
-            <div class="logo__text">
-                <div class="logo__text__name">
-                    <img src="common/images/engenious.png" alt="name">
+<main class="login-page">
+    <div class="login-frame">
+        <section class="login-page__header">
+            <div class="logo">
+                <div class="logo__img">
+                    <img src="common/images/logo.png" alt="logo">
                 </div>
-                <div class="logo__text__type">University</div>
+                <div class="logo__text">
+                    <div class="logo__text__name">
+                        <img src="common/images/engenious.png" alt="name">
+                    </div>
+                    <div class="logo__text__type">University</div>
+                </div>
+            </div>
+
+            <div class="lang">
+                <span class="active">en</span>
+            </div>
+        </section>
+
+        <section class="login-page__main">
+            <form class="login-form needs-validation" novalidate>
+                <div class="mb-3">
+                    <input class="form-control" id="username" placeholder="Username or email" required>
+                </div>
+
+                <div class="mb-4">
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    <div class="invalid-feedback" id="error-container"></div>
+                </div>
+
+                <div class="login-btn-wrapper">
+                    <button type="submit" class="btn btn-primary py-2 px-5">Login</button>
+                </div>
+
+                <div class="lost-password">
+                    <a href="#">Lost password?</a>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <section class="login-page__footer">
+        <div class="info-message">
+            <div class="main-text">New student?</div>
+            <div class="sub-text">
+                Contact supervisor to get your login and password
             </div>
         </div>
-
-        <div class="lang">
-            <span class="active">en</span>
-        </div>
-    </div>
-    <div class="login-main__form">
-
-    </div>
-</section>
-
-<section class="new-student">
-    <div class="info-message">
-        <div class="main-text"></div>
-        <div class="sub-text"></div>
-    </div>
-</section>
+    </section>
+</main>
 <!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+<script src="common/bootstrap/http_cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_js_bootstrap.bundle.js"></script>
+
+<script src="pages/login/script.js"></script>
 </body>
 </html>
