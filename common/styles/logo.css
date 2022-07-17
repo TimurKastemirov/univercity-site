@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.logo__text__name {
+  line-height: 12px;
+}
+.logo__text__type {
+  line-height: 21px;
+}
+
+/*# sourceMappingURL=logo.css.map */

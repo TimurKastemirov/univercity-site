@@ -1,0 +1,21 @@
+.lang {
+  display: inline-flex;
+  gap: 4px;
+}
+.lang > span {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.lang > span:hover {
+  text-decoration-line: underline;
+}
+.lang > span.active {
+  color: #3D40D5;
+  opacity: 0.65;
+  text-decoration-line: underline;
+}
+
+/*# sourceMappingURL=lang.css.map */
