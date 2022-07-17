@@ -1,3 +1,5 @@
+import { changeHref } from "../../common/scripts/change-href.js";
+
 (function () {
     'use strict'
 
@@ -82,6 +84,7 @@
                                 usernameField.setCustomValidity('');
                                 passwordField.setCustomValidity('');
                                 document.getElementById('error-container').innerText = '';
+                                changeHref('dashboard');
                             })
                             .catch((error) => {
                                 usernameField.setCustomValidity(error.message);
@@ -91,8 +94,6 @@
                             .finally(() => {
                                 form.classList.add('was-validated')
                             });
-
-
                     }, false)
                 })
         },
