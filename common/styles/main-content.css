@@ -6,6 +6,9 @@
 }
 .main__content {
   margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .main__footer .back-to-dashboard {
   cursor: pointer;

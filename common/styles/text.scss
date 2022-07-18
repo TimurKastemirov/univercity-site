@@ -1,39 +1,37 @@
-.bold-text {
+.text {
+  margin: 0;
+  padding: 0;
+
   font-family: 'Biotif', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
+
   color: #141416;
 
   &_primary {
     color: #3D40D5;
   }
-}
 
-.book-text {
-  font-family: 'Biotif', sans-serif;
-  font-style: normal;
-  font-weight: 450;
-  font-size: 16px;
-  line-height: 21px;
-  color: #141416;
-}
+  &_bold {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+  }
 
-.normal-text {
-  font-family: 'Biotif', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #141416;
-}
+  &_book {
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 21px;
+  }
 
-.light-text {
-  font-family: 'Biotif', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 18px;
-  color: #141416;
+  &_normal {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &_light {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

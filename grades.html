@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="common/styles/logo.css">
     <link rel="stylesheet" href="common/styles/lang.css">
     <link rel="stylesheet" href="common/styles/header.css">
+    <link rel="stylesheet" href="common/styles/main-content.css">
+    <link rel="stylesheet" href="common/styles/text.css">
+    <link rel="stylesheet" href="common/styles/custom-button.css">
+    <link rel="stylesheet" href="common/styles/bordered-block.css">
 
     <title>Engenious University</title>
 </head>
@@ -163,10 +167,29 @@
             </nav>
         </div>
     </div>
-
 </header>
 <main class="main">
-    <h1>Grades</h1>
+    <div class="main__header page-name">
+        <h1 class="text text_bold">💯 Grades</h1>
+    </div>
+
+    <div class="main__content grades">
+        <div class="program-start">
+            <div class="bordered-block">
+                <p class="text text_bold">Your program starts on <span class="text text_primary">October 7th.</span></p>
+            </div>
+        </div>
+
+        <div class="enrollment">
+            <p class="text text_bold">📃 Enrollment Exams</p>
+            <p class="text text_normal">English Language - 95 (A)</p>
+            <p class="text text_normal">Basic cybersecurity - 81 (C)</p>
+        </div>
+    </div>
+
+    <div class="main__footer">
+        <a class="back-to-dashboard text text_bold" href="/dashboard.html">👈 back to Dashboard</a>
+    </div>
 </main>
 
 <script type="module" src="common/scripts/header-menu.js"></script>

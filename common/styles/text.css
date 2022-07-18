@@ -1,40 +1,32 @@
-.bold-text {
+.text {
+  margin: 0;
+  padding: 0;
   font-family: "Biotif", sans-serif;
   font-style: normal;
+  color: #141416;
+}
+.text_primary {
+  color: #3D40D5;
+}
+.text_bold {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  color: #141416;
 }
-.bold-text_primary {
-  color: #3D40D5;
-}
-
-.book-text {
-  font-family: "Biotif", sans-serif;
-  font-style: normal;
+.text_book {
   font-weight: 450;
   font-size: 16px;
   line-height: 21px;
-  color: #141416;
 }
-
-.normal-text {
-  font-family: "Biotif", sans-serif;
-  font-style: normal;
+.text_normal {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #141416;
 }
-
-.light-text {
-  font-family: "Biotif", sans-serif;
-  font-style: normal;
+.text_light {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  color: #141416;
 }
 
 /*# sourceMappingURL=text.css.map */
