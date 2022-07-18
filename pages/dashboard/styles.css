@@ -10,7 +10,11 @@
     display: none;
   }
 }
+.header__content .mobile.menu-open .blackout, .header__content .mobile.menu-open .menu-container {
+  display: block;
+}
 .header__content .mobile .blackout {
+  display: none;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -20,6 +24,7 @@
   z-index: 1;
 }
 .header__content .mobile .menu-container {
+  display: none;
   position: absolute;
   min-width: 260px;
   max-width: 350px;

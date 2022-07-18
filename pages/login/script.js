@@ -1,4 +1,5 @@
-import { changeHref } from "../../common/scripts/change-href.js";
+import { changeHref } from "../../common/scripts/modules/change-href.js";
+import { localStorageTokens } from "../../common/scripts/modules/constants.js";
 
 (function () {
     'use strict'
@@ -84,6 +85,7 @@ import { changeHref } from "../../common/scripts/change-href.js";
                                 usernameField.setCustomValidity('');
                                 passwordField.setCustomValidity('');
                                 document.getElementById('error-container').innerText = '';
+                                localStorage.setItem(localStorageTokens.isLoggedIn, 'true');
                                 changeHref('dashboard');
                             })
                             .catch((error) => {

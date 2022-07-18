@@ -22,13 +22,13 @@
 <header class="header">
     <div class="header__content">
         <div class="mobile">
-            <div class="menu-icon">
+            <div class="menu-icon" id="open-menu-icon">
                 <img src="common/images/burger-menu-icon.png" alt="menu icon">
             </div>
             <div class="logo-icon">
                 <img src="common/images/logo.png" alt="logo">
             </div>
-            <div class="logout-icon">
+            <div class="logout-icon" id="logout-icon">
                 <img src="common/images/logout-icon.png" alt="logout icon">
             </div>
 
@@ -37,10 +37,10 @@
             <div class="menu-container">
                 <div class="menu-container__content">
                     <div class="menu-container__header">
-                        <div class="menu-icon">
+                        <div class="menu-icon" id="close-menu-icon">
                             <img src="common/images/burger-menu-icon.png" alt="menu icon">
                         </div>
-                        <div class="close-icon">
+                        <div class="close-icon" id="close-icon">
                             <img src="common/images/close-icon.png" alt="close icon">
                         </div>
                     </div>
@@ -64,19 +64,19 @@
                             <nav>
                                 <ul class="menu-list">
                                     <li class="menu-list__item menu-item">
-                                        <a href="#" class="menu-item__link">💻 Dashboard</a>
+                                        <a href="dashboard.html" class="menu-item__link">💻 Dashboard</a>
                                     </li>
                                     <li class="menu-list__item menu-item">
-                                        <a href="#" class="menu-item__link">📃 Documents</a>
+                                        <a href="documents.html" class="menu-item__link">📃 Documents</a>
                                     </li>
                                     <li class="menu-list__item menu-item">
-                                        <a href="#" class="menu-item__link">📚 Subjects of Study</a>
+                                        <a href="subjects-of-study.html" class="menu-item__link">📚 Subjects of Study</a>
                                     </li>
                                     <li class="menu-list__item menu-item">
-                                        <a href="#" class="menu-item__link">💯 Grades</a>
+                                        <a href="grades.html" class="menu-item__link">💯 Grades</a>
                                     </li>
                                     <li class="menu-list__item menu-item">
-                                        <a href="#" class="menu-item__link">👤 My Profile</a>
+                                        <a href="profile.html" class="menu-item__link">👤 My Profile</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -103,7 +103,7 @@
                                     <li class="menu-list__item menu-item">
                                         <span class="menu-item__link">Help</span>
                                     </li>
-                                    <li class="menu-list__item menu-item">
+                                    <li class="menu-list__item menu-item" id="logout-menu-item">
                                         <span class="menu-item__link">Exit</span>
                                     </li>
                                 </ul>
@@ -121,5 +121,8 @@
 
 </header>
 <main class="main"></main>
+
+<script type="module" src="common/scripts/mobile-menu.js"></script>
+<script type="module" src="common/scripts/on-load-logged-in-checker.js"></script>
 </body>
 </html>
