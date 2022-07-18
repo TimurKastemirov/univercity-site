@@ -28,6 +28,8 @@ import {redirectIfNotLoggedIn} from "./modules/redirect-if-not-logged-in.js";
 
     const logoutIcon = document.getElementById('logout-icon');
     const logoutMenuItem = document.getElementById('logout-menu-item');
+    const desktopLogoutIcon = document.getElementById('desktop-logout-icon');
 
-    [logoutIcon, logoutMenuItem].forEach((elem) => elem.addEventListener('click', logout));
+    [logoutIcon, logoutMenuItem, desktopLogoutIcon]
+        .forEach((elem) => elem.addEventListener('click', logout));
 })();
