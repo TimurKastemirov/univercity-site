@@ -180,14 +180,14 @@
                 <p class="text text_bold">Invitation</p>
                 <p class="text text_light">Official paper that confirmes our interest in your upcoming study in Engenious University</p>
 
-                <button class="btn-custom">Download</button>
+                <button class="btn-custom download-btn" id="download-invitation">Download</button>
             </div>
 
             <div class="bordered-block">
                 <p class="text text_bold">Agreement of Study</p>
                 <p class="text text_light">Official paper that regulates Engenious-Student relationship</p>
 
-                <button class="btn-custom">Download</button>
+                <button class="btn-custom download-btn" id="download-agreement-of-study">Download</button>
             </div>
 
             <div class="bordered-block">
@@ -201,7 +201,7 @@
                 <p class="text text_bold">Enrollment Exams Results</p>
                 <p class="text text_light">Results of student’s enrollment exams</p>
 
-                <button class="btn-custom">Download</button>
+                <button class="btn-custom download-btn" id="download-exam-results">Download</button>
             </div>
         </div>
 
@@ -213,13 +213,13 @@
             <div class="bordered-block">
                 <p class="text text_bold">Masters Diploma</p>
 
-                <button class="btn-custom">Download</button>
+                <button class="btn-custom download-btn" id="download-master-diploma">Download</button>
             </div>
 
             <div class="bordered-block">
                 <p class="text text_bold">Bachelors Diploma</p>
 
-                <button class="btn-custom">Download</button>
+                <button class="btn-custom download-btn" id="download-bachelors-diploma">Download</button>
             </div>
         </div>
     </div>
@@ -229,7 +229,25 @@
     </div>
 </main>
 
+<script type="module">
+    import {downloadURI} from "./common/scripts/modules/download-file.js";
 
+    const buttons = document.querySelectorAll('.download-btn');
+    const idToUrlMap = new Map();
+    idToUrlMap.set('download-invitation', 'documents/university/NazarenkoENG8412CS_invitation.pdf');
+    idToUrlMap.set('download-agreement-of-study', 'documents/university/NazarenkoENG8412CS_agreement.pdf');
+    idToUrlMap.set('download-exam-results', 'documents/university/NazarenkoENG8412CS_examresults.pdf');
+
+    idToUrlMap.set('download-master-diploma', 'documents/student/NazarenkoENG8412CS_masters.jpg');
+    idToUrlMap.set('download-bachelors-diploma', 'documents/student/NazarenkoENG8412CS_bachelors.png');
+
+    [...buttons].forEach((button) => {
+        const id = button.id;
+        button.addEventListener('click', () => {
+            downloadURI(idToUrlMap.get(id), id.replace('download-', ''));
+        });
+    });
+</script>
 <script type="module" src="common/scripts/header-menu.js"></script>
 <script type="module" src="common/scripts/on-load-logged-in-checker.js"></script>
 </body>
