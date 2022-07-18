@@ -8,4 +8,10 @@
   gap: 8px;
 }
 
+.bordered-block-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 /*# sourceMappingURL=bordered-block.css.map */

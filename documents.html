@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="common/styles/logo.css">
     <link rel="stylesheet" href="common/styles/lang.css">
     <link rel="stylesheet" href="common/styles/header.css">
+    <link rel="stylesheet" href="common/styles/main-content.css">
+    <link rel="stylesheet" href="common/styles/text.css">
+    <link rel="stylesheet" href="common/styles/custom-button.css">
+    <link rel="stylesheet" href="common/styles/bordered-block.css">
 
     <title>Engenious University</title>
 </head>
@@ -166,7 +170,63 @@
 
 </header>
 <main class="main">
-    <h1>Documents</h1>
+    <div class="main__header page-name">
+        <h1 class="text text_bold">📃 Engenious Documents</h1>
+    </div>
+
+    <div class="main__content">
+        <div class="bordered-block-list">
+            <div class="bordered-block">
+                <p class="text text_bold">Invitation</p>
+                <p class="text text_light">Official paper that confirmes our interest in your upcoming study in Engenious University</p>
+
+                <button class="btn-custom">Download</button>
+            </div>
+
+            <div class="bordered-block">
+                <p class="text text_bold">Agreement of Study</p>
+                <p class="text text_light">Official paper that regulates Engenious-Student relationship</p>
+
+                <button class="btn-custom">Download</button>
+            </div>
+
+            <div class="bordered-block">
+                <p class="text text_bold">Scolarship & Accomodation</p>
+                <p class="text text_light">Official paper that confirmes your scolarship payment rules and house renting in Prague</p>
+
+                <button class="btn-custom" disabled>Download</button>
+            </div>
+
+            <div class="bordered-block">
+                <p class="text text_bold">Enrollment Exams Results</p>
+                <p class="text text_light">Results of student’s enrollment exams</p>
+
+                <button class="btn-custom">Download</button>
+            </div>
+        </div>
+
+        <div>
+            <h1 class="text text_bold">📃 Student documents</h1>
+        </div>
+
+        <div class="bordered-block-list">
+            <div class="bordered-block">
+                <p class="text text_bold">Masters Diploma</p>
+
+                <button class="btn-custom">Download</button>
+            </div>
+
+            <div class="bordered-block">
+                <p class="text text_bold">Bachelors Diploma</p>
+
+                <button class="btn-custom">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main__footer">
+        <a class="back-to-dashboard text text_bold" href="/dashboard.html">👈 back to Dashboard</a>
+    </div>
 </main>
 
 
