@@ -1,0 +1,123 @@
+.header {
+  &__content {
+    .mobile {
+      position: relative;
+
+      @media (min-width: 992px) {
+        display: none;
+      }
+
+      padding: 40px 30px 50px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &.menu-open {
+        .blackout, .menu-container {
+          display: block;
+        }
+      }
+
+      .blackout {
+        display: none;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: #3D40D5;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .menu-container {
+        display: none;
+        position: absolute;
+        min-width: 260px;
+        max-width: 350px;
+        width: 90%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: #FFFFFF;
+        z-index: 2;
+
+        &__content {
+          padding: 40px 30px;
+        }
+
+        &__header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        &__main {
+          margin-top: 45px;
+
+          .menu-block:not(:last-child) {
+            margin-bottom: 50px;
+          }
+
+          .menu-list {
+            margin: 0;
+            padding: 0;
+
+            &__item {
+              display: block;
+              &:not(:last-child) {
+                margin-bottom: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .desktop {
+      display: none;
+
+      @media (min-width: 992px) {
+        display: flex;
+      }
+
+      padding: 70px 65px 80px;
+      justify-content: space-between;
+
+      nav {
+        flex: 1 0 80%;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .menu-list {
+        display: flex;
+        gap: 10px 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__item {
+          display: block;
+        }
+      }
+    }
+
+    .menu-icon, .logout-icon, .close-icon {
+      cursor: pointer;
+    }
+
+    .menu-item {
+      &__link {
+        font-family: 'Biotif', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #141416;
+        cursor: pointer;
+
+        text-decoration: none;
+      }
+    }
+  }
+}
