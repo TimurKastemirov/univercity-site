@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="common/styles/logo.css">
     <link rel="stylesheet" href="common/styles/lang.css">
     <link rel="stylesheet" href="common/styles/header.css">
+    <link rel="stylesheet" href="common/styles/main-content.css">
+    <link rel="stylesheet" href="common/styles/text.css">
+    <link rel="stylesheet" href="common/styles/custom-button.css">
+    <link rel="stylesheet" href="common/styles/bordered-block.css">
+
+    <link rel="stylesheet" href="pages/subjects-of-study/styles.css">
 
     <title>Engenious University</title>
 </head>
@@ -166,7 +172,78 @@
 
 </header>
 <main class="main">
-    <h1>subjects of study</h1>
+    <div class="main__header page-name">
+        <h1 class="text text_bold">📚 Subjects of Study</h1>
+    </div>
+
+    <div class="main__content">
+        <div class="schedule-available">
+            <div class="bordered-block">
+                <p class="text text_bold">Detailed schedule will be available on <span class="text text_primary">August 14th.</span></p>
+            </div>
+        </div>
+
+        <div class="subjects">
+            <div class="subjects__item">
+                <div class="bordered-block">
+                    <p class="text text_bold">Cloud Security I</p>
+                    <p class="text text_light">Teacher: Mark Walkonski</p>
+                    <p class="text text_light">Timeline: 124 hours</p>
+                    <p class="text text_light">Final test: Exam</p>
+
+                    <button class="btn-custom" disabled>Schedule</button>
+                </div>
+            </div>
+
+            <div class="subjects__item">
+                <div class="bordered-block">
+                    <p class="text text_bold">Cloud Security II</p>
+                    <p class="text text_light">Teacher: Mark Walkonski</p>
+                    <p class="text text_light">Timeline: 380 hours</p>
+                    <p class="text text_light">Final test: Exam</p>
+
+                    <button class="btn-custom" disabled>Schedule</button>
+                </div>
+            </div>
+
+            <div class="subjects__item">
+                <div class="bordered-block">
+                    <p class="text text_bold">Artificial Intelligence in Cybersecurity</p>
+                    <p class="text text_light">Teacher: Julianna Kwasovecka</p>
+                    <p class="text text_light">Timeline: 86 hours</p>
+                    <p class="text text_light">Final test: Exam</p>
+
+                    <button class="btn-custom" disabled>Schedule</button>
+                </div>
+            </div>
+
+            <div class="subjects__item">
+                <div class="bordered-block">
+                    <p class="text text_bold">Science in Computer Engineering</p>
+                    <p class="text text_light">Teacher: Suzanna Covaç</p>
+                    <p class="text text_light">Timeline: 64 hours</p>
+                    <p class="text text_light">Final test: Essay</p>
+
+                    <button class="btn-custom" disabled>Schedule</button>
+                </div>
+            </div>
+
+            <div class="subjects__item">
+                <div class="bordered-block">
+                    <p class="text text_bold">Applied Math in Cybersecurity</p>
+                    <p class="text text_light">Teacher: Alex Southgate</p>
+                    <p class="text text_light">Timeline: 64 hours</p>
+                    <p class="text text_light">Final test: Test</p>
+
+                    <button class="btn-custom" disabled>Schedule</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main__footer">
+        <a class="back-to-dashboard text text_bold" href="/dashboard.html">👈 back to Dashboard</a>
+    </div>
 </main>
 
 <script type="module" src="common/scripts/header-menu.js"></script>

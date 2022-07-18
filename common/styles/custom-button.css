@@ -16,5 +16,9 @@
   outline: 0;
   border: 0;
 }
+.btn-custom:disabled {
+  background: #CACACA;
+  cursor: not-allowed;
+}
 
 /*# sourceMappingURL=custom-button.css.map */
