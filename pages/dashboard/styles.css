@@ -21,7 +21,9 @@
 }
 .header__content .mobile .menu-container {
   position: absolute;
-  width: 350px;
+  min-width: 260px;
+  max-width: 350px;
+  width: 90%;
   height: 100vh;
   top: 0;
   left: 0;
@@ -39,8 +41,27 @@
 .header__content .mobile .menu-container__main {
   margin-top: 45px;
 }
-.header__content .mobile .menu-container__main .menu-block {
+.header__content .mobile .menu-container__main .menu-block:not(:last-child) {
   margin-bottom: 50px;
+}
+.header__content .mobile .menu-container__main .menu-list {
+  margin: 0;
+  padding: 0;
+}
+.header__content .mobile .menu-container__main .menu-list__item {
+  display: block;
+}
+.header__content .mobile .menu-container__main .menu-list__item:not(:last-child) {
+  margin-bottom: 18px;
+}
+.header__content .mobile .menu-container__main .menu-list .menu-item__link {
+  font-family: "Biotif", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #141416;
+  text-decoration: none;
 }
 .header__content .desktop {
   display: none;
