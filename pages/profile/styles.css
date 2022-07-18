@@ -1,0 +1,12 @@
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.user-profile .avatar {
+  width: 185px;
+  height: 185px;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

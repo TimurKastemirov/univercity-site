@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="common/styles/logo.css">
     <link rel="stylesheet" href="common/styles/lang.css">
     <link rel="stylesheet" href="common/styles/header.css">
+    <link rel="stylesheet" href="common/styles/main-content.css">
+    <link rel="stylesheet" href="common/styles/text.css">
+    <link rel="stylesheet" href="common/styles/custom-button.css">
+
+    <link rel="stylesheet" href="pages/profile/styles.css">
 
     <title>Engenious University</title>
 </head>
@@ -166,7 +171,30 @@
 
 </header>
 <main class="main">
-    <h1>My profile</h1>
+    <div class="main__header page-name">
+        <h1 class="bold-text">👤 My Profile</h1>
+    </div>
+
+    <div class="main__content user-profile">
+        <div class="avatar">
+            <img src="pages/profile/images/avatar.jpg" alt="avatar">
+        </div>
+
+        <div class="user-info">
+            <p class="p-0 m-0 bold-text">Andrii Nazarenko</p>
+            <p class="p-0 m-0 light-text">Student number: ENG8412CS</p>
+            <p class="p-0 m-0 light-text">Date of Birth: 30/04/1997</p>
+            <p class="p-0 m-0 light-text">Enrolled on: 01/06/2022</p>
+        </div>
+
+        <div class="action-btns">
+            <button class="btn-custom">Manage documents</button>
+        </div>
+    </div>
+
+    <div class="main__footer">
+        <a class="back-to-dashboard bold-text" href="/dashboard.html">👈 back to Dashboard</a>
+    </div>
 </main>
 <script type="module" src="common/scripts/header-menu.js"></script>
 <script type="module" src="common/scripts/on-load-logged-in-checker.js"></script>

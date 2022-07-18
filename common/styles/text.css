@@ -1,0 +1,40 @@
+.bold-text {
+  font-family: "Biotif", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #141416;
+}
+.bold-text_primary {
+  color: #3D40D5;
+}
+
+.book-text {
+  font-family: "Biotif", sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 21px;
+  color: #141416;
+}
+
+.normal-text {
+  font-family: "Biotif", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #141416;
+}
+
+.light-text {
+  font-family: "Biotif", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #141416;
+}
+
+/*# sourceMappingURL=text.css.map */

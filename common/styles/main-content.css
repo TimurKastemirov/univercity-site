@@ -1,0 +1,15 @@
+.main {
+  padding: 0 20px;
+}
+.main__header {
+  margin-bottom: 32px;
+}
+.main__content {
+  margin-bottom: 32px;
+}
+.main__footer .back-to-dashboard {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main-content.css.map */
