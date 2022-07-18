@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Biotif";
+  src: url("../fonts/biotif/Biotif-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Biotif";
+  src: url("../fonts/biotif/Biotif-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Biotif";
+  src: url("../fonts/biotif/Biotif-Book.ttf");
+  font-weight: 450;
+}
+@font-face {
+  font-family: "Biotif";
+  src: url("../fonts/biotif/Biotif-Bold.ttf");
+  font-weight: 700;
+}
+* {
+  font-family: Biotif, sans-serif !important;
+}
+
+/*# sourceMappingURL=fonts.css.map */
