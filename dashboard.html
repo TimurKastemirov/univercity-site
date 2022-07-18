@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="common/styles/logo.css">
     <link rel="stylesheet" href="common/styles/lang.css">
     <link rel="stylesheet" href="common/styles/header.css">
+    <link rel="stylesheet" href="common/styles/main-content.css">
+    <link rel="stylesheet" href="common/styles/text.css">
+    <link rel="stylesheet" href="common/styles/custom-button.css">
+    <link rel="stylesheet" href="common/styles/bordered-block.css">
 
     <link rel="stylesheet" href="pages/dashboard/styles.css">
 
@@ -168,9 +172,67 @@
 
 </header>
 <main class="main">
-    <h1>Dashboard</h1>
+    <div class="main__header page-name">
+        <h1 class="text text_bold">👋 Welcome back, Andrii!</h1>
+        <p class="text text_light">Cloud Security Program</p>
+        <p class="text text_light">2022-2023</p>
+
+        <div class="mt-2">
+            <button class="btn-custom" id="my-profile">My profile</button>
+        </div>
+    </div>
+
+    <div class="main__content">
+        <div class="bordered-block">
+            <p class="text text_bold">Currently the study is on pause</p>
+            <p class="text text_light">
+                You can check out your upcoming schedule or contact us regarding any questions by our email:
+                <span class="text text_primary">help@engenious.study</span>
+            </p>
+        </div>
+
+        <div class="block">
+            <p class="text text_bold">📆 Upcoming schedule</p>
+            <p class="text text_normal text_normal_bold text_primary mt-2">August 1 - September 28</p>
+            <p class="text text_light">Czech language study</p>
+
+            <p class="text text_normal text_normal_bold text_primary mt-2">September 30</p>
+            <p class="text text_light">Czech language exam at university facility</p>
+
+            <p class="text text_normal text_normal_bold text_primary mt-2">October 7</p>
+            <p class="text text_light">Start of the educational process</p>
+        </div>
+
+        <div class="bordered-block">
+            <p class="text text_bold">Detailed schedule will be available on <span class="text text_primary">August 14th.</span></p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; justify-content: stretch; max-width: 250px;">
+            <button class="btn-custom" id="manage-docs">Manage documents</button>
+            <button class="btn-custom mt-3" id="subjects-of-study">Subjects of study</button>
+        </div>
+    </div>
 </main>
 
+<script type="module">
+    import { changeHref } from "./common/scripts/modules/change-href.js";
+
+    (() => {
+        'use strict'
+
+        document.getElementById('my-profile').addEventListener('click', () => {
+            changeHref('profile');
+        });
+
+        document.getElementById('manage-docs').addEventListener('click', () => {
+            changeHref('documents');
+        });
+
+        document.getElementById('subjects-of-study').addEventListener('click', () => {
+            changeHref('subjects-of-study');
+        });
+    })()
+</script>
 <script type="module" src="common/scripts/header-menu.js"></script>
 <script type="module" src="common/scripts/on-load-logged-in-checker.js"></script>
 </body>

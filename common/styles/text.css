@@ -23,6 +23,9 @@
   font-size: 14px;
   line-height: 18px;
 }
+.text_normal_bold {
+  font-weight: 700;
+}
 .text_light {
   font-weight: 300;
   font-size: 14px;
